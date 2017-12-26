@@ -104,27 +104,19 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, FilmEkle.class);
         startActivity(i);
     }
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        //geri butonunu yakalıyoruz
-        if(keyCode == KeyEvent.KEYCODE_BACK && isTaskRoot()) {
-            //Programdan çıkmak isteyip istemediğini soruyoruz
-            new AlertDialog.Builder(this)
-                    .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle(R.string.quit)
-                    .setMessage(R.string.really_quit)
-                    .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            //Aktiviteyi durduruyoruz
-                            finish();
-                        }
-                    })
-                    .setNegativeButton(R.string.no, null)
-                    .show();
+   @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle(R.string.quit)
+                .setMessage(R.string.really_quit)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-            return true;
-        }
-        else {
-            return super.onKeyDown(keyCode, event);
-        }
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_HOME);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    }
+                }).setNegativeButton(R.string.no, null).show();
     }
 }
