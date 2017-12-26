@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/ekle"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Film Ekle"
+        app:showAsAction="always"
+         />
+</menu>

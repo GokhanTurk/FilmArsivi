@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView android:id="@+id/film_adi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:textSize="18dip"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:text="deneme"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_weight="0.08" />
+    </RelativeLayout>
+
+</LinearLayout>

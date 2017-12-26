@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="turkuaz">#30d6c8</color>
+    <color name="koyuturkuaz">#2bbeb1</color>
+    <color name="seffafsiyah">#e7000000</color>
+</resources>

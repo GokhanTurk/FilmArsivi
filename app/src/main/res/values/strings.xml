@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Film Arşivi</string>
+    <string name="quit">Çıkış</string>
+    <string name="really_quit">Çıkmak istediğinize emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+</resources>
